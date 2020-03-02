@@ -1,0 +1,17 @@
+//Master 
+@import './utilities/_Variables.scss';
+
+
+// Multi purpose styling
+@import "./Multipurpose/Navbar.scss";
+
+// Home Page Styles
+@import "./HomePage/Home.scss";
+
+@import "./HomePage/Header.scss";
+
+// User Info Page Styles
+@import "./UserInfo/UserInfo.scss";
+
+@import "./UserInfo/GeneralInfo.scss";
+@import "./UserInfo/Map.scss";
