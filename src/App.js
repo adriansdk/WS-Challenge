@@ -1,26 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect } from "react";
 import './App.css';
+import Map from './components/Map';
+require('dotenv').config();
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(props) {
+  const apiKey = process.env.REACT_APP_TOMTOM_API_KEY
+  
+  useEffect(() => {
+    console.log(process.env.REACT_APP_TOMTOM_API_KEY)
+  })
+
+
+  return (<h1><Map apiKey={apiKey}></Map></h1>);
 }
 
 export default App;
