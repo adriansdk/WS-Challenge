@@ -1,18 +1,33 @@
 import React, { useEffect } from "react";
+
+//COMPONENTS
+import { Route, Switch } from 'react-router-dom'
+import { LinkContainer } from "react-router-bootstrap";
+import HomePage from "./pages/Home";
+import UserInfoPage from "./pages/UserInfo";
+import Navbar from "./components/Navbar";
+import { Nav, Row, Col } from "react-bootstrap";
+import UseAnimations from "react-useanimations";
+
+// STYLING
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import Map from './components/Map';
+
+//REQUIREMENTS
+const logo = require("./assets/logo.jpg");
 require('dotenv').config();
 
 
 function App(props) {
-  const apiKey = process.env.REACT_APP_TOMTOM_API_KEY
-  
-  useEffect(() => {
-    console.log(process.env.REACT_APP_TOMTOM_API_KEY)
-  })
-
-
-  return (<h1><Map apiKey={apiKey}></Map></h1>);
+  return (
+    <React.Fragment>
+      <Navbar></Navbar>
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/user-info" component={UserInfoPage} />
+      </Switch>
+    </React.Fragment>
+  )
 }
 
 export default App;
