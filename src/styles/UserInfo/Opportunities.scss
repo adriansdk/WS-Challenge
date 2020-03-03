@@ -3,12 +3,25 @@
     padding: 10px 0px;
   }
   .numbers {
-    text-align: center;
-    color: white;
+    .col {
+      padding: 0px 10px;
+    }
+    h2 {
+      font-size: $card-title;
+      line-height: 80%;
+      white-space: nowrap;
+      span {
+        white-space: nowrap;
+        font-size: $card-small;
+      }
+    }
     h3 {
+      color: white;
+      text-align: center;
       border-radius: 5px;
       font-size: 25px;
-      width: 28%;
+      width: 100%;
+      display: inline-block;
     }
     .row {
       padding-bottom: 15px;
