@@ -22,23 +22,18 @@
     }
   }
   .green {
-    color: white;
     background-color: #2e7d32;
   }
   .blue {
-    color: white;
     background-color: #1976d2;
   }
   .red {
-    color: white;
     background-color: #c62828;
   }
   .black {
-    color: white;
     background-color: #424242;
   }
   .orange {
-    color: white;
     background-color: #f9a825;
   }
 
@@ -47,8 +42,38 @@
     border-radius: 50%;
     height: 25px;
     width: 25px;
+    .red-icon {
+      .icon {
+        color: #c62828;
+      }
+    }
+
+    .orange-icon {
+      .icon {
+        color: #f9a825;
+      }
+    }
+
+    .green-icon {
+      .icon {
+        color: #2e7d32;
+      }
+    }
+    h3 {
+      margin-left: 40px;
+      color: $primary-color;
+      font-size: $card-subtitle;
+      white-space: nowrap;
+    }
+    h4 {
+      margin-left: 40px;
+      color: $primary-color;
+      font-size: $card-small;
+      white-space: nowrap;
+    }
   }
   hr {
+    background-color: white;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 11px;

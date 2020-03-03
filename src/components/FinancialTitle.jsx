@@ -2,17 +2,19 @@ import React from "react";
 import "../styles/Style.scss";
 
 function FinancialTitle(props) {
+  const user = props.user;
+
   return (
     <div className="financial-title box-card">
       <div className="container">
         <h4 className="spacing card-title">Títulos financeiros</h4>
         <div className="row">
           <div className="col-3">
-            <h3 className="red">1</h3>
+            <h3 className="red">{user.financialTitles.expired.quantity}</h3>
           </div>
           <div className="col">
             <h2>
-              R$3,000,00
+              {user.financialTitles.expired.amount}
               <br></br>
               <span>Vencidos</span>
             </h2>
@@ -20,11 +22,11 @@ function FinancialTitle(props) {
         </div>
         <div className="row">
           <div className="col-3">
-            <h3 className="orange">2</h3>
+            <h3 className="orange">{user.financialTitles.toBeExpired.quantity}</h3>
           </div>
           <div className="col">
             <h2>
-              R$2,500,000
+              {user.financialTitles.toBeExpired.amount}
               <br></br>
               <span>A vencer</span>
             </h2>
@@ -32,11 +34,11 @@ function FinancialTitle(props) {
         </div>
         <div className="row">
           <div className="col-3">
-            <h3 className="green">3</h3>
+            <h3 className="green">{user.financialTitles.paid.quantity}</h3>
           </div>
           <div className="col">
             <h2>
-              R$2,459,00
+              {user.financialTitles.paid.amount}
               <br></br>
               <span>Pagos</span>
             </h2>

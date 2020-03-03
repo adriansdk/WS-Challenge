@@ -16,142 +16,143 @@
   "profilePicture": "",
   "opportunities": {
     "won": {
-      "quantity":6,
-      "amount":"R$20,454,00"
+      "quantity": 6,
+      "amount": "R$20,454,00"
     },
     "lost": {
-      "quantity":3,
-      "amount":"R$4,600,00"
+      "quantity": 3,
+      "amount": "R$4,600,00"
     },
     "open": {
-      "quantity":2,
-      "amount":"R$8,874,00"
+      "quantity": 2,
+      "amount": "R$8,874,00"
     },
     "discarded": {
-      "quantity":1,
-      "amount":"R$2,454,00"
+      "quantity": 1,
+      "amount": "R$2,454,00"
     }
   },
   "sales": {
     "months": [26, 14, 32, 9]
   },
   "credit": {
-    "creditLimit": "R$12,000,00",
-    "available": "R$3,000,00"
+    "creditLimit": "R$19,500,00",
+    "available": "R$7,887,30"
   },
   "financialTitles": {
     "expired": {
       "quantity": 1,
-      "amount": "R$3,105,00"
+      "amount": "R$1,505,00"
     },
     "toBeExpired": {
       "quantity": 2,
-      "amount": "R$3,105,00"
+      "amount": "R$3,010,00"
     },
     "paid": {
       "quantity": 2,
-      "amount": "R$3,105,00"
+      "amount": "R$3,010,00"
+    }
+  },
+  "activities": {
+    "delayed": {
+      "type": {
+        "call": [
+          {
+            "description": "Ligação de agendamento da reunião",
+            "withWho": "Erica Collins",
+            "delayedFor": 4
+          }
+        ],
+        "meeting": [],
+        "email": [],
+        "event": []
+      }
     },
-    "activities": {
-      "delayed": {
-        "type": {
-          "call": [
-            {
-              "description": "Ligação de agendamento da reunião",
-              "withWho": "Erica Collins",
-              "delayedFor": 4
+    "inProgress": {
+      "type": {
+        "call": [],
+        "meeting": [],
+        "email": [],
+        "event": []
+      }
+    },
+    "toBeCompleted": {
+      "type": {
+        "call": [],
+        "meeting": [
+          {
+            "description": "Reunião orçamento",
+            "withWho": "Abigail Fisher",
+            "date": {
+              "time": "09:45",
+              "date": "03/04/2020"
             }
-          ],
-          "meeting": [],
-          "email": [],
-          "event": []
-        }
-      },
-      "inProgress": {
-        "type": {
-          "call": [],
-          "meeting": [],
-          "email": []
-        }
-      },
-      "toBeCompleted": {
-        "type": {
-          "call": [],
-          "meeting": [
-            {
-              "description": "Reunião orçamento",
-              "withWho": "Abigail Fisher",
-              "date": {
-                "time": "09:45",
-                "date": "03/04/2020"
-              }
+          }
+        ],
+        "email": [
+          {
+            "description": "Email Documentação",
+            "withWho": "Jeffery King",
+            "date": {
+              "time": "09:45",
+              "date": "03/04/2020"
             }
-          ],
-          "email": [
-            {
-              "description": "Email Documentação",
-              "withWho": "Jeffery King",
-              "date": {
-                "time": "09:45",
-                "date": "03/04/2020"
-              }
+          }
+        ],
+        "event": [
+          {
+            "description": "Almoço coorporativo",
+            "withWho": "Lawrence Kelly",
+            "date": {
+              "time": "09:45",
+              "date": "03/05/2020"
             }
-          ],
-          "event": [
-            {
-              "description": "Almoço coorporativo",
-              "withWho": "Lawrence Kelly",
-              "date": {
-                "time": "09:45",
-                "date": "03/05/2020"
-              }
+          }
+        ]
+      }
+    },
+    "completed": {
+      "type": {
+        "call": [
+          {
+            "description": "Ligação contrato",
+            "withWho": "Dylan Watsor",
+            "date": {
+              "time": "09:45",
+              "date": "19/09/2019"
             }
-          ]
-        }
-      },
-      "completed": {
-        "type": {
-          "call": [
-            {
-              "description": "Ligação contrato",
-              "withWho": "Dylan Watsor",
-              "date": {
-                "time": "09:45",
-                "date": "19/09/2019"
-              }
+          }
+        ],
+        "meeting": [
+          {
+            "description": "Reunião orçamento",
+            "withWho": "Abigail Fisher",
+            "date": {
+              "time": "09:45",
+              "date": "03/04/2019"
             }
-          ],
-          "meeting": [
-            {
-              "description": "Reunião orçamento",
-              "withWho": "Abigail Fisher",
-              "date": {
-                "time": "09:45",
-                "date": "03/04/2019"
-              }
+          }
+        ],
+        "email": [
+          {
+            "description": "Email Documentação",
+            "withWho": "Jeffery King",
+            "date": {
+              "time": "09:45",
+              "date": "03/04/2019"
             }
-          ],
-          "email": [
-            {
-              "description": "Email Documentação",
-              "withWho": "Jeffery King",
-              "date": {
-                "time": "09:45",
-                "date": "03/04/2019"
-              }
+          }
+        ],
+        "event": [
+          {
+            "description": "Almoço coorporativo",
+            "withWho": "Lawrence Kelly",
+            "date": {
+              "time": "09:45",
+              "date": "03/05/2019"
             }
-          ],
-          "event": [
-            {
-              "description": "Almoço coorporativo",
-              "withWho": "Lawrence Kelly",
-              "date": {
-                "time": "09:45",
-                "date": "03/05/2019"
-              }
-            }
-          ]
-        }
+          }
+        ]
       }
     }
   }

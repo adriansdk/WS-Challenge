@@ -8,7 +8,7 @@ function Sales(props) {
     datasets: [
       {
         label: "Produção",
-        data: [30, 13, 16, 20],
+        data: props.user.sales.months,
         backgroundColor: "rgba(0, 0, 255, 0.4)",
         borderColor: "#007ACC",
         hoverBackgroundColor: "rgba(0,0,200,0.6)",
