@@ -1,0 +1,27 @@
+.icons-bar {
+  text-decoration: none;
+  list-style-type: none;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  li {
+    button {
+      padding: 14% 0px;
+      height: 100%;
+      width: 100%;
+      border: none;
+      background-color: white;
+    }
+    button:hover {
+      .icon {
+        color: $base-color;
+      }
+    }
+    .icon {
+      color: $primary-color;
+    }
+  }
+}

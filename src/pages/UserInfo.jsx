@@ -1,35 +1,53 @@
 import React, { useEffect } from "react";
+
 import GeneralInfo from "../components/GeneralInfo";
 import Opportunities from "../components/Opportunities";
 import Sales from "../components/Sales";
 import Location from "../components/Location";
-import { Row, Col, Button } from "react-bootstrap";
-import Navbar from "../components/Navbar";
+import { Row, Col } from "react-bootstrap";
+import Sidebar from "../components/Sidebar";
+
 import "../styles/Style.scss";
+import CreditLimit from "../components/CreditLimit";
+import FinancialTittle from "../components/FinancialTittle";
+import Activities from "../components/Activities";
 
 function UserInfo(props) {
   return (
-    <div className="user-info">
+    <div className="user-info container-fluid">
       <Row>
-        <Col>
-          <GeneralInfo></GeneralInfo>
+        <Col xs={1}>
+          <Sidebar></Sidebar>
         </Col>
         <Col>
-          <Location></Location>
+          <Row>
+            <Col>
+              <GeneralInfo></GeneralInfo>
+            </Col>
+            <Col>
+              <Location></Location>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Opportunities></Opportunities>
+            </Col>
+            <Col>
+              <CreditLimit></CreditLimit>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Sales></Sales>
+            </Col>
+            <Col>
+              <FinancialTittle></FinancialTittle>
+            </Col>
+          </Row>
         </Col>
-      </Row>
-      <Row>
         <Col>
-          <Opportunities></Opportunities>
+          <Activities></Activities>
         </Col>
-        <Col></Col>
-      </Row>
-
-      <Row>
-        <Col>
-          <Sales></Sales>
-        </Col>
-        <Col></Col>
       </Row>
     </div>
   );
