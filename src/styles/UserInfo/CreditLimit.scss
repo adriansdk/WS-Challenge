@@ -1,0 +1,27 @@
+.credit-limit {
+    height: 95%;
+  .spacing {
+    padding: 10px 0px;
+  }
+  .row {
+    margin: 0px;
+    padding-bottom: 20px;
+    h4 {
+      font-weight: bold;
+      font-size: $card-subtitle;
+      span {
+        font-weight: normal;
+        color: $primary-color;
+      }
+    }
+    .blue {
+      color: #1976d2;
+    }
+    .green {
+      color: #2e7d32;
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+}

@@ -40,19 +40,19 @@ function GeneralInfo(props) {
           <h5>justine@gmail.com</h5>
         </div>
         <div className="social-media">
-          <a href="#" class="whats">
+          <a href="#" className="whats">
             <FontAwesomeIcon icon={faWhatsapp} />{" "}
           </a>
-          <a href="#">
+          <a href="#" className="facebook">
             <FontAwesomeIcon icon={faFacebook} />{" "}
           </a>
-          <a href="#">
+          <a href="#" className="instagram">
             <FontAwesomeIcon icon={faInstagram} />{" "}
           </a>
-          <a href="#">
+          <a href="#" className="twitter">
             <FontAwesomeIcon icon={faTwitter} />{" "}
           </a>
-          <a href="#">
+          <a href="#" className="linkedin">
             <FontAwesomeIcon icon={faLinkedin} />{" "}
           </a>
         </div>
