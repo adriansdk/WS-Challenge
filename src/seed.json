@@ -15,10 +15,22 @@
   },
   "profilePicture": "",
   "opportunities": {
-    "won": 4,
-    "lost": 1,
-    "open": 2,
-    "discarded": 0
+    "won": {
+      "quantity":6,
+      "amount":"R$20,454,00"
+    },
+    "lost": {
+      "quantity":3,
+      "amount":"R$4,600,00"
+    },
+    "open": {
+      "quantity":2,
+      "amount":"R$8,874,00"
+    },
+    "discarded": {
+      "quantity":1,
+      "amount":"R$2,454,00"
+    }
   },
   "sales": {
     "months": [26, 14, 32, 9]

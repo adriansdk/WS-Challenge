@@ -2,21 +2,28 @@ import React from "react";
 import "../styles/Style.scss";
 
 function Opportunities(props) {
+  const user = props.user;
+
+  function getTotal(){
+    let opportunities = user.opportunities
+    let total = opportunities.won.quantity + opportunities.lost.quantity + opportunities.open.quantity + opportunities.discarded.quantity
+    return total
+  }
   return (
     <div className="opportunities box-card container">
-      <h3 className="card-title spacing">Oportunidades (7)</h3>
+      <h3 className="card-title spacing">Oportunidades ({getTotal()})</h3>
       <div className="numbers">
         <div className="row">
           <div className="col">
             <div className="row">
               <div className="col-4">
-                <h3 className="green">4</h3>
+                <h3 className="green">{user.opportunities.won.quantity}</h3>
               </div>
               <div className="col">
                 <h2>
                   Ganhas
                   <br></br>
-                  <span>R$20,000,000</span>
+                  <span>{user.opportunities.won.amount}</span>
                 </h2>
               </div>
             </div>
@@ -24,13 +31,13 @@ function Opportunities(props) {
           <div className="col">
             <div className="row">
               <div className="col-4">
-                <h3 className="red">4</h3>
+                <h3 className="red">{user.opportunities.lost.quantity}</h3>
               </div>
               <div className="col">
                 <h2>
                   Perdidas
                   <br></br>
-                  <span>R$4,300,000</span>
+                  <span>{user.opportunities.lost.amount}</span>
                 </h2>
               </div>
             </div>
@@ -40,13 +47,13 @@ function Opportunities(props) {
           <div className="col">
             <div className="row">
               <div className="col-4">
-                <h3 className="blue">4</h3>
+                <h3 className="blue">{user.opportunities.open.quantity}</h3>
               </div>
               <div className="col">
                 <h2>
                   Abertas
                   <br></br>
-                  <span>Várias moedas</span>
+                  <span>{user.opportunities.open.amount}</span>
                 </h2>
               </div>
             </div>
@@ -54,19 +61,25 @@ function Opportunities(props) {
           <div className="col">
             <div className="row">
               <div className="col-4">
-                <h3 className="black">4</h3>
+                <h3 className="black">{user.opportunities.discarded.quantity}</h3>
               </div>
               <div className="col">
                 <h2>
                   Descartadas
                   <br></br>
-                  <span>-</span>
+                  <span>{user.opportunities.discarded.amount}</span>
                 </h2>
               </div>
             </div>
           </div>
         </div>
-        <a href="https://wealthsystems.gupy.io/">Ver todas as oportunidades</a>
+        <a
+          href="https://wealthsystems.gupy.io/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Ver todas as oportunidades
+        </a>
       </div>
     </div>
   );
