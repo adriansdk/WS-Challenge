@@ -7,10 +7,12 @@
       padding: 0px 10px;
     }
     h2 {
+      font-weight: 500;
       font-size: $card-title;
       line-height: 80%;
       white-space: nowrap;
       span {
+        font-weight: normal;
         white-space: nowrap;
         font-size: $card-small;
       }
