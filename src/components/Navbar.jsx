@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import UseAnimations from "react-useanimations";
 // Package currently contains a bug where the icon doesn't play the reverse animation when assigned a onClick event caller. Bug has been fixed,
@@ -14,7 +14,12 @@ function NavbarComponent(props) {
     <React.Fragment>
       <nav className="navbar navbar-expand-lg">
         <Link className="navbar-brand" to="/">
-          <img height="30px" width="auto" src={logo} alt="Wealth systems logo"></img>
+          <img
+            height="30px"
+            width="auto"
+            src={logo}
+            alt="Wealth systems logo"
+          ></img>
         </Link>
         <button
           className="navbar-toggler"
@@ -35,8 +40,10 @@ function NavbarComponent(props) {
           id="navbarNavDropdown"
         >
           <ul className="navbar-nav">
-            <Link className="nav-link" to="/user-info">
-              <li className="nav-item active">Your Profile</li>
+            <Link className="nav-link" to="/secondary-route">
+              <li className="nav-item active">
+                <button className="btn btn-light">Clique aqui</button>
+              </li>
             </Link>
           </ul>
         </div>

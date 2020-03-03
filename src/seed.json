@@ -64,7 +64,13 @@
           }
         ],
         "meeting": [],
-        "email": [],
+        "email": [
+          {
+            "description": "PDFS da reunião reunião",
+            "withWho": "Grupo WS",
+            "delayedFor": 3
+          }
+        ],
         "event": []
       }
     },

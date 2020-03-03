@@ -22,8 +22,8 @@ function App(props) {
     <React.Fragment>
       <Navbar api={api}></Navbar>
       <Switch>
-        <Route exact path="/" render={(props) => <HomePage {...props} api={api} />} />
-        <Route path="/user-info" render={(props) => <UserInfoPage {...props} api={api} />} />
+        <Route exact path="/" render={(props) => <UserInfoPage {...props} api={api} />} />
+        <Route path="/secondary-route" render={(props) => <HomePage {...props} api={api} />} />
       </Switch>
     </React.Fragment>
   )

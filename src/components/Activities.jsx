@@ -53,7 +53,7 @@ function Activities(props) {
             {eachCall.description}
           </h4>
           <h4>{eachCall.withWho}</h4>
-          <h4>Em atraso por {eachCall.delayedFor}.</h4>
+          <h4>Em atraso por {eachCall.delayedFor} dias.</h4>
         </div>
       );
     });

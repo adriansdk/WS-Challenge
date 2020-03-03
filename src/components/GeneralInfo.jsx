@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faPhoneAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "../styles/Style.scss";
-const profilePic = require("../assets/logo.jpg");
+const profilePic = require("../assets/profile.png");
 
 function GeneralInfo(props) {
   const user = props.user;
