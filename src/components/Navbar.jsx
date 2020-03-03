@@ -1,26 +1,25 @@
-import React, { useState } from "react";
-import { LinkContainer } from "react-router-bootstrap";
+import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { Nav, Navbar, Row, Col } from "react-bootstrap";
-import Home from "../pages/Home";
 
 import UseAnimations from "react-useanimations";
 // Package currently contains a bug where the icon doesn't play the reverse animation when assigned a onClick event caller. Bug has been fixed,
 // currently awaiting pull request acceptance
 
-import UserInfo from "../pages/UserInfo";
 import "../styles/Style.scss";
 
 const logo = require("../assets/logo.jpg");
 
 function NavbarComponent(props) {
-  const [active, setActive] = useState(false);
-
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg">
         <Link className="navbar-brand" to="/">
-          <img height="30px" width="auto" src={logo}></img>
+          <img
+            height="30px"
+            width="auto"
+            src={logo}
+            alt="Wealth systems logo"
+          ></img>
         </Link>
         <button
           className="navbar-toggler"
@@ -41,8 +40,10 @@ function NavbarComponent(props) {
           id="navbarNavDropdown"
         >
           <ul className="navbar-nav">
-            <Link className="nav-link" to="/user-info">
-              <li className="nav-item active">Your Profile</li>
+            <Link className="nav-link" to="/secondary-route">
+              <li className="nav-item active">
+                <button className="btn btn-light">Clique aqui</button>
+              </li>
             </Link>
           </ul>
         </div>

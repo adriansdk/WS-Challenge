@@ -1,0 +1,47 @@
+.financial-title {
+  height: 95%;
+  .spacing {
+    padding: 10px 0px;
+  }
+  .col {
+    padding: 0px 10px;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: $card-subtitle;
+    line-height: 80%;
+    white-space: nowrap;
+    span {
+      font-weight: normal;
+      white-space: nowrap;
+      font-size: $card-small;
+    }
+  }
+  h3 {
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 25px;
+    width: 100%;
+    display: inline-block;
+  }
+  .row {
+    padding-bottom: 10px;
+  }
+  .green {
+    background-color: #2e7d32;
+  }
+  .orange {
+    background-color: #f9a825;
+  }
+  .red {
+    background-color: #c62828;
+  }
+  .black {
+    background-color: #424242;
+  }
+  a {
+    font-size: 15px;
+    padding-bottom: 10px;
+  }
+}

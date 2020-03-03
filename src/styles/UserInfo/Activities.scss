@@ -1,0 +1,91 @@
+.activities {
+  overflow: auto;
+  height: 95%;
+  margin-top: 1.5%;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px #ccc;
+  .card-title {
+    margin-bottom: 0px;
+  }
+  .spacing {
+    padding: 10px;
+  }
+  .filters {
+    margin-top: 15px;
+    color: white;
+    .btn {
+      span{
+        color: white;
+      }
+      padding: 3px 10px;
+      text-align: start;
+      color: $primary-color;
+    }
+    h3 {
+      font-size: $card-medium;
+      white-space: nowrap;
+    }
+  }
+  .green {
+    background-color: #2e7d32;
+  }
+  .blue {
+    background-color: #1976d2;
+  }
+  .red {
+    background-color: #c62828;
+  }
+  .black {
+    background-color: #424242;
+  }
+  .orange {
+    background-color: #f9a825;
+  }
+
+  .ball {
+    z-index: 1;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    .red-icon {
+      .icon {
+        font-size: 18px;
+        color: #c62828;
+      }
+    }
+
+    .orange-icon {
+      .icon {
+        font-size: 18px;
+        color: #f9a825;
+      }
+    }
+
+    .green-icon {
+      .icon {
+        font-size: 18px;
+        color: #2e7d32;
+      }
+    }
+    h3 {
+      margin-left: 40px;
+      color: $primary-color;
+      font-size: $card-subtitle;
+      white-space: nowrap;
+    }
+    h4 {
+      margin-left: 40px;
+      color: $primary-color;
+      font-size: $card-small;
+      white-space: nowrap;
+    }
+  }
+  hr {
+    background-color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 11px;
+    text-align: left;
+  }
+}

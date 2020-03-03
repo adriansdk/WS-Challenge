@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 
 function Sales(props) {
-  const [data, setData] = useState({
+  const [data] = useState({
     type: "verticalBar",
     labels: ["Janeiro", "Fevereiro", "Março", "Abril"],
     datasets: [
       {
         label: "Produção",
-        data: [30, 13, 16, 20],
+        data: props.user.sales.months,
         backgroundColor: "rgba(0, 0, 255, 0.4)",
         borderColor: "#007ACC",
         hoverBackgroundColor: "rgba(0,0,200,0.6)",

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import GeneralInfo from "../components/GeneralInfo";
 import Opportunities from "../components/Opportunities";
@@ -9,7 +9,7 @@ import Sidebar from "../components/Sidebar";
 
 import "../styles/Style.scss";
 import CreditLimit from "../components/CreditLimit";
-import FinancialTittle from "../components/FinancialTittle";
+import FinancialTitle from "../components/FinancialTitle";
 import Activities from "../components/Activities";
 
 function UserInfo(props) {
@@ -22,31 +22,31 @@ function UserInfo(props) {
         <Col>
           <Row>
             <Col>
-              <GeneralInfo></GeneralInfo>
+              <GeneralInfo user={props.api}></GeneralInfo>
             </Col>
             <Col>
-              <Location></Location>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Opportunities></Opportunities>
-            </Col>
-            <Col>
-              <CreditLimit></CreditLimit>
+              <Location user={props.api}></Location>
             </Col>
           </Row>
           <Row>
             <Col>
-              <Sales></Sales>
+              <Opportunities user={props.api}></Opportunities>
             </Col>
             <Col>
-              <FinancialTittle></FinancialTittle>
+              <CreditLimit user={props.api}></CreditLimit>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <Sales user={props.api}></Sales>
+            </Col>
+            <Col>
+              <FinancialTitle user={props.api}></FinancialTitle>
             </Col>
           </Row>
         </Col>
         <Col>
-          <Activities></Activities>
+          <Activities user={props.api}></Activities>
         </Col>
       </Row>
     </div>
