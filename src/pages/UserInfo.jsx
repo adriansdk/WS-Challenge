@@ -9,7 +9,7 @@ import Sidebar from "../components/Sidebar";
 
 import "../styles/Style.scss";
 import CreditLimit from "../components/CreditLimit";
-import FinancialTittle from "../components/FinancialTittle";
+import FinancialTitle from "../components/FinancialTitle";
 import Activities from "../components/Activities";
 
 function UserInfo(props) {
@@ -41,7 +41,7 @@ function UserInfo(props) {
               <Sales></Sales>
             </Col>
             <Col>
-              <FinancialTittle></FinancialTittle>
+              <FinancialTitle></FinancialTitle>
             </Col>
           </Row>
         </Col>
