@@ -8,18 +8,62 @@ function Opportunities(props) {
       <div className="numbers">
         <div className="row">
           <div className="col">
-            <h3 className="green">4</h3>
+            <div className="row">
+              <div className="col-4">
+                <h3 className="green">4</h3>
+              </div>
+              <div className="col">
+                <h2>
+                  Ganhas
+                  <br></br>
+                  <span>R$20,000,000</span>
+                </h2>
+              </div>
+            </div>
           </div>
           <div className="col">
-            <h3 className="red">1</h3>
+            <div className="row">
+              <div className="col-4">
+                <h3 className="red">4</h3>
+              </div>
+              <div className="col">
+                <h2>
+                  Perdidas
+                  <br></br>
+                  <span>R$4,300,000</span>
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <h3 className="blue">2</h3>
+            <div className="row">
+              <div className="col-4">
+                <h3 className="blue">4</h3>
+              </div>
+              <div className="col">
+                <h2>
+                  Abertas
+                  <br></br>
+                  <span>Várias moedas</span>
+                </h2>
+              </div>
+            </div>
           </div>
           <div className="col">
-            <h3 className="black">0</h3>
+            <div className="row">
+              <div className="col-4">
+                <h3 className="black">4</h3>
+              </div>
+              <div className="col">
+                <h2>
+                  Descartadas
+                  <br></br>
+                  <span>-</span>
+                </h2>
+              </div>
+            </div>
           </div>
         </div>
         <a href="#">Ver todas as oportunidades</a>
