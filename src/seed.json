@@ -1,0 +1,147 @@
+[
+  {
+    "user": "Adrian Visnieski",
+    "company": "Wealth Systems",
+    "active": true,
+    "contactInfo": {
+      "number": "45984058900",
+      "email": "adrian@gmail.com"
+    },
+    "socialMediaUrls": {
+      "whatsapp": "https://web.whatsapp.com/",
+      "facebook": "https://www.facebook.com/",
+      "twitter": "https://twitter.com/home",
+      "instagram": "https://www.instagram.com/"
+    },
+    "profilePicture": "",
+    "opportunities": {
+      "won": 4,
+      "lost": 1,
+      "open": 2,
+      "discarded": 0
+    },
+    "sales": {
+      "months": [26, 14, 32, 9]
+    },
+    "credit": {
+      "credit-limit": "R$12,000,00",
+      "available": "R$3,000,00"
+    },
+    "financialTitles": {
+      "expired": {
+        "quantity": 1,
+        "amount": "R$3,105,00"
+      },
+      "toBeExpired": {
+        "quantity": 2,
+        "amount": "R$3,105,00"
+      },
+      "paid": {
+        "quantity": 2,
+        "amount": "R$3,105,00"
+      },
+      "activities": {
+        "delayed": {
+          "type": {
+            "call": [
+              {
+                "description": "Ligação de agendamento da reunião",
+                "withWho": "Erica Collins",
+                "delayedFor": 4
+              }
+            ],
+            "meeting": [],
+            "email": [],
+            "event": []
+          }
+        },
+        "inProgress": {
+          "type": {
+            "call": [],
+            "meeting": [],
+            "email": []
+          }
+        },
+        "toBeCompleted": {
+          "type": {
+            "call": [],
+            "meeting": [
+              {
+                "description": "Reunião orçamento",
+                "withWho": "Abigail Fisher",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/04/2020"
+                }
+              }
+            ],
+            "email": [
+              {
+                "description": "Email Documentação",
+                "withWho": "Jeffery King",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/04/2020"
+                }
+              }
+            ],
+            "event": [
+              {
+                "description": "Almoço coorporativo",
+                "withWho": "Lawrence Kelly",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/05/2020"
+                }
+              }
+            ]
+          }
+        },
+        "completed": {
+          "type": {
+            "call": [
+              {
+                "description": "Ligação contrato",
+                "withWho": "Dylan Watsor",
+                "date": {
+                  "time": "09:45",
+                  "date": "19/09/2019"
+                }
+              }
+            ],
+            "meeting": [
+              {
+                "description": "Reunião orçamento",
+                "withWho": "Abigail Fisher",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/04/2019"
+                }
+              }
+            ],
+            "email": [
+              {
+                "description": "Email Documentação",
+                "withWho": "Jeffery King",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/04/2019"
+                }
+              }
+            ],
+            "event": [
+              {
+                "description": "Almoço coorporativo",
+                "withWho": "Lawrence Kelly",
+                "date": {
+                  "time": "09:45",
+                  "date": "03/05/2019"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+]

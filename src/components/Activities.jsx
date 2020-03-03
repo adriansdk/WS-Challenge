@@ -49,6 +49,36 @@ function Activities(props) {
             </button>
           </div>
         </div>
+        <div className="ball red"></div>
+        <hr
+          text-align="left"
+          style={{
+            color: "rgba(51,51,51,0.3)",
+            backgroundColor: "rgba(51,51,51,0.3)",
+            width: "2px",
+            height: "75px"
+          }}
+        />
+        <div className="ball orange"></div>
+        <hr
+          text-align="left"
+          style={{
+            color: "rgba(51,51,51,0.3)",
+            backgroundColor: "rgba(51,51,51,0.3)",
+            width: "2px",
+            height: "150px"
+          }}
+        />
+        <div className="ball green"></div>
+        <hr
+          text-align="left"
+          style={{
+            color: "rgba(51,51,51,0.3)",
+            backgroundColor: "rgba(51,51,51,0.3)",
+            width: "2px",
+            height: "200px"
+          }}
+        />
       </div>
     </div>
   );

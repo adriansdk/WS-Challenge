@@ -20,25 +20,38 @@
       font-size: $card-medium;
       white-space: nowrap;
     }
-    .green {
-      color: white;
-      background-color: #2e7d32;
-    }
-    .blue {
-      color: white;
-      background-color: #1976d2;
-    }
-    .red {
-      color: white;
-      background-color: #c62828;
-    }
-    .black {
-      color: white;
-      background-color: #424242;
-    }
-    .orange {
-      color: white;
-      background-color: #f9a825;
-    }
+  }
+  .green {
+    color: white;
+    background-color: #2e7d32;
+  }
+  .blue {
+    color: white;
+    background-color: #1976d2;
+  }
+  .red {
+    color: white;
+    background-color: #c62828;
+  }
+  .black {
+    color: white;
+    background-color: #424242;
+  }
+  .orange {
+    color: white;
+    background-color: #f9a825;
+  }
+
+  .ball {
+    z-index: 1;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+  }
+  hr {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 11px;
+    text-align: left;
   }
 }
