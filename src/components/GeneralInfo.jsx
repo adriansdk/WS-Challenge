@@ -12,6 +12,7 @@ import "../styles/Style.scss";
 const profilePic = require("../assets/logo.jpg");
 
 function GeneralInfo(props) {
+  const user = props.user;
   return (
     <div className="general-info box-card">
       <div className="container">
@@ -20,39 +21,73 @@ function GeneralInfo(props) {
         </div>
         <div className="information row">
           <div className="col-3 profile-picture">
-            <img src={profilePic} height="65px" width="65px"></img>
+            <img
+              src={profilePic}
+              height="65px"
+              width="65px"
+              alt="Profile"
+            ></img>
           </div>
           <div className="col">
-            <h4>Justine Robinson</h4>
-            <h5>Acme Inc</h5>
-            <button className="btn">Ativo</button>
+            <h4>{user.user}</h4>
+            <h5>{user.company}</h5>
+            {user.active === true ? (
+              <button className="btn">Ativo</button>
+            ) : (
+              <button className="btn">Desconectado</button>
+            )}
           </div>
         </div>
         <div className="contact-info">
           <span>
             <FontAwesomeIcon icon={faPhoneAlt} />{" "}
           </span>
-          <h5>45 9 984058900</h5>
+          <h5>{user.contactInfo.number}</h5>
           <br></br>
           <span>
             <FontAwesomeIcon icon={faEnvelope} />
           </span>
-          <h5>justine@gmail.com</h5>
+          <h5>{user.contactInfo.email}</h5>
         </div>
         <div className="social-media">
-          <a href="#" className="whats">
+          <a
+            href={user.socialMediaUrls.whatsapp}
+            className="whats"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faWhatsapp} />{" "}
           </a>
-          <a href="#" className="facebook">
+          <a
+            href={user.socialMediaUrls.facebook}
+            className="facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faFacebook} />{" "}
           </a>
-          <a href="#" className="instagram">
+          <a
+            href={user.socialMediaUrls.instagram}
+            className="instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faInstagram} />{" "}
           </a>
-          <a href="#" className="twitter">
+          <a
+            href={user.socialMediaUrls.twitter}
+            className="twitter"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faTwitter} />{" "}
           </a>
-          <a href="#" className="linkedin">
+          <a
+            href={user.socialMediaUrls.linkedin}
+            className="linkedin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FontAwesomeIcon icon={faLinkedin} />{" "}
           </a>
         </div>

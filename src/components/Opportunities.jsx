@@ -66,7 +66,7 @@ function Opportunities(props) {
             </div>
           </div>
         </div>
-        <a href="#">Ver todas as oportunidades</a>
+        <a href="https://wealthsystems.gupy.io/">Ver todas as oportunidades</a>
       </div>
     </div>
   );

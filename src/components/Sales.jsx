@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Bar } from "react-chartjs-2";
 
 function Sales(props) {
-  const [data, setData] = useState({
+  const [data] = useState({
     type: "verticalBar",
     labels: ["Janeiro", "Fevereiro", "Março", "Abril"],
     datasets: [

@@ -7,7 +7,7 @@ function Activities(props) {
       <div className="container">
         <h3 className="spacing card-title">Atividades</h3>
         <input
-          class="form-control"
+          className="form-control"
           type="text"
           placeholder="Pesquisar..."
           aria-label="Search"
