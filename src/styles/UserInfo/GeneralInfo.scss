@@ -1,0 +1,51 @@
+.general-info {
+  .spacing {
+    padding: 10px 0px;
+  }
+  .profile-picture {
+    text-align: center;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .information {
+    h4 {
+      font-size: $card-subtitle;
+      margin: 0px 0px 0px 10px;
+    }
+    h5 {
+      margin: 3px 0px 0px 10px;
+      font-size: $card-small;
+    }
+    .btn {
+      margin: 0px 0px 10px 10px;
+      padding: 5px 8px;
+      font-size: $card-small;
+      background-color: #c8e6c9;
+    }
+  }
+  .contact-info {
+    span {
+      display: inline;
+    }
+    h5 {
+      display: inline;
+      padding: 0px 0px 10px 5px;
+      margin: 0px 0px 0px 10px;
+      font-size: $card-medium;
+    }
+  }
+  .social-media {
+    text-align: end;
+    padding: 5px 0px 10px;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      font-size: 20px;
+      margin: 0px 5px;
+    }
+    a.whats:hover {
+      color: #00e676;
+    }
+  }
+}

@@ -1,4 +1,21 @@
-.user-info{
-    width: 100vw;
-    background-color: yellow;
+.user-info {
+  .col-1 {
+    flex: 0 0 5.5%;
+    max-width: 5.5%;
+   padding: 0px 10px 0px 0px;
+  }
+  .col {
+    padding: 0px 10px;
+  }
+  .box-card {
+    margin-top: 3%;
+    -moz-box-shadow: 0 0 10px #ccc;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+  }
+  .card-title {
+    color: $primary-color;
+    font-weight: 400;
+    font-size: $card-title;
+  }
 }

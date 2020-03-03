@@ -37,11 +37,10 @@ function Map(props) {
     let lng = localStorage.getItem("lng");
     let map = L.map("map", {
       center: [lat, lng],
-      zoom: 16,
+      zoom: 14,
       zoomControl: false
     });
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      detectRetina: true,
       maxZoom: 20,
       maxNativeZoom: 17
     }).addTo(map);
@@ -51,7 +50,9 @@ function Map(props) {
       .openPopup();
   });
 
-  return <Wrapper width="300px" height="300px" id="map"></Wrapper>;
+  return (
+    <Wrapper width="auto" height="95%" id="map" className="box-card"></Wrapper>
+  );
 }
 
 export default Map;

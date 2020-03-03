@@ -18,7 +18,7 @@ function NavbarComponent(props) {
 
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg fixed-top">
+      <nav className="navbar navbar-expand-lg">
         <Link className="navbar-brand" to="/">
           <img height="30px" width="auto" src={logo}></img>
         </Link>

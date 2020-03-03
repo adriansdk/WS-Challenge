@@ -1,0 +1,33 @@
+.opportunities {
+  .spacing {
+    padding: 10px 0px;
+  }
+  .numbers {
+    text-align: center;
+    color: white;
+    h3 {
+      border-radius: 5px;
+      font-size: 25px;
+      width: 28%;
+    }
+    .row {
+      padding-bottom: 15px;
+    }
+    .green {
+      background-color: #2e7d32;
+    }
+    .blue {
+      background-color: #1976d2;
+    }
+    .red {
+      background-color: #c62828;
+    }
+    .black {
+      background-color: #424242;
+    }
+    a {
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+  }
+}
