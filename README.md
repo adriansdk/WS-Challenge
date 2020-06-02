@@ -56,4 +56,4 @@ Dividi as branches baseado em qual componente estava trabalhando, exemplo: "deve
 
 # Desenvolvedor:
 
-- [Adrian Vesnieski](https://github.com/adriansdk)
+- [Adrian Visnieski](https://github.com/adriansdk)
